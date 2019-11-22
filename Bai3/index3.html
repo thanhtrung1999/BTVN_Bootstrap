@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bai3-Form</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+	<style type="text/css" media="screen">
+		.form-main{
+			width: 50%;
+			border: 1px solid white;
+			border-top-color: #f2f2f2;
+			box-shadow: 0px 1px 1px #999999;
+		}
+		.clear{clear: both;}
+		h3{
+			color: #999999;
+			margin-top: 1rem;
+			text-align: center;
+		}
+		.row1, .row2, .row3{
+			margin-bottom: 2rem;
+			margin-left: 1rem;
+		}
+		.choose{
+		    margin: 0 20%;
+		    padding-bottom: 4%;
+		    border-bottom: 1px solid #cccccc;
+		}
+		.choose i{
+			color: #999999;
+			margin-left: 1rem;
+		}
+		.row2 input{
+			padding-bottom: 4px;
+			border: none;
+			width: 100%;
+			border-bottom: 1px solid #cccccc;
+		}
+		.row2 button{
+			margin-left: 40%;
+			padding: 0.3rem 1rem;
+			color: white;
+			background-color: #3399ff;
+			border: 0px solid white;
+			border-radius: 2px;
+			box-shadow: 0 2px 4px #999999;
+			outline: none;
+		}
+		.row3{
+			line-height: 2.5rem;
+			margin: 1rem;
+		}
+		.row3 span{font-weight: 500;}
+		.row3 i{color: #3399ff;}
+		@media screen and (min-width: 300px) and (max-width: 575px){
+			.form-main{width: 100%; font-size: 0.8rem;}
+			.choose i{margin-left: 0.3rem;}
+			h3{font-size: 1.5rem;}
+			.choose{
+				margin: 5% 50% 5% 0;
+    			width: 30%;
+			}
+			.row2{margin-left: 0;}
+			.row2 button{
+				margin-left: 0;
+    			font-size: 0.7rem;
+			}
+			.row3{margin: 0;}
+		}
+		@media screen and (min-width: 576px) and (max-width: 767px){
+			.form-main{width: 100%; font-size: 1rem;}
+			h3{font-size: 1.7rem;}
+			.choose i{margin-left: 0.5rem;}
+			.row2{margin-left: 0;}
+			.row2 button{
+				margin-left: 0;
+    			font-size: 0.8rem;
+			}
+			.row3{margin: 0;}
+		}
+		@media screen and (min-width: 768px) and (max-width: 991px){
+			.form-main{width: 80%;}
+			.choose {
+			    margin: 5% 15%;
+			    width: 70%;
+			}
+		}
+		@media screen and (min-width: 992px) and (max-width: 1199px){
+			.form-main{width: 60%;}
+			.choose {
+			    margin: 5% 15%;
+			    width: 70%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form action="index_submit" method="get" accept-charset="utf-8">
+			<div class="container form-main">
+				<div class="container">
+					<h3>Exercises</h3>
+					<div class="row row1">
+						<div class="col-md-4 col-sm-4 col-12">
+							<div class="choose">
+								<span>blue</span>
+								<i class="fas fa-caret-down"></i>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-12">
+							<div class="choose">
+								<span>light</span>
+								<i class="fas fa-caret-down"></i>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-12">
+							<div class="choose">
+								<span>8</span>
+								<i class="fas fa-caret-down"></i>
+							</div>
+						</div>
+					</div>
+					<div class="row row2">
+						<div class="col-sm-8 col-md-7 col-8">
+							<input type="text" name="exercise" placeholder="Exercise">
+						</div>
+						<div class="col-sm-4 col-md-4 col-2">
+							<button type="button" value="submit">CREATE</button>
+						</div>
+					</div>
+					<div class="row3">
+						<div class="row">
+							<div class="col-sm-11 col-10">
+								<span>Bench Press</span>
+							</div>
+							<div class="col-sm-1 col-1">
+								<i class="fas fa-trash"></i>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-11 col-10">
+								<span>Deadlift</span>
+							</div>
+							<div class="col-sm-1 col-1">
+								<i class="fas fa-trash"></i>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-11 col-10">
+								<span>Squats</span>
+							</div>
+							<div class="col-sm-1 col-1">
+								<i class="fas fa-trash"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

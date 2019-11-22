@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Form</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+	<style type="text/css" media="screen">
+		.container{
+			font-family: "Myriad Pro"
+			margin: 0 50%;
+			width: 50%;
+		}
+		.form-main{
+			width: 80%;
+			margin: 0 10%;
+		}
+		h2{
+			text-align: center;
+		}
+		.form-group{
+			padding: 0;
+			font-weight: 500;
+		}
+		.login button{
+			background-color: #c6c6c6;
+			color: black;
+		}
+		.login button:hover{
+			background-color: #a6a4a4;
+			color: white;
+			transition: 0.3;
+		}
+		.login-email button{
+			background-color: #327cbd;
+			color: white;
+		}
+		.login-email button:hover{
+			background-color: #205d92;
+			color: white;
+			transition: 0.3;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form class="form-main" action="#" method="post" accept-charset="utf-8">
+			<h2>Login Form</h2>
+			<div class="form-group col-lg-12 email">
+				<label for="email">Email address</label>
+				<input type="email" class="form-control" name="email" placeholder="Email">
+			</div>
+			<div class="form-group col-lg-12 pass">
+				<label for="pass">Password</label>
+				<input type="password" class="form-control" name="pass" placeholder="Password">
+			</div>
+			<div class="form-group mb-4 login login-email">
+				<button class="btn btn-block" value="Submit">Login with Email</button>
+			</div>
+			<div class="form-group mb-2 login login-fb">
+				<button class="btn btn-block" value="Submit">
+					<i class="fab fa-facebook-f mr-1"></i>
+					<span>Login with Facebook</span>
+				</button>
+			</div>
+			<div class="form-group mb-2 login login-tw">
+				<button class="btn btn-block" value="Submit">
+					<i class="fab fa-twitter mr-1"></i>
+					<span>Login with Twitter</span>
+				</button>
+			</div>
+			<div class="form-group mb-2 login login-git">
+				<button class="btn btn-block" value="Submit">
+					<i class="fab fa-github mr-1"></i>
+					<span>Login with Github</span>
+				</button>
+			</div>
+			<div class="form-group mb-2 login login-gg">
+				<button class="btn btn-block" value="Submit">
+					<i class="fab fa-google mr-1"></i>
+					<span>Login with Google</span>
+				</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

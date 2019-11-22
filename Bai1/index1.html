@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Bai1-Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="..\css\bootstrap.min.css">
+	<style type="text/css" media="screen">
+		span{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h4>Job Application With Resume Upload</h4>
+	  	<form action="#" method="post" accept-charset="utf-8">
+	  		<div class="contact-info-form">
+	  			<h5>Contact Information</h5>
+	  			<div class="row">
+		  			<div class="form-group col-sm-6 col-md-12">
+			  			<label for="firstName">First name <span>*</span></label>
+			  			<input type="text" class="form-control" name="firstName" id="firstName">
+		  			</div>
+			  		<div class="form-group col-sm-6 col-md-12">
+			  			<label for="lastName">Last name <span>*</span></label>
+			  			<input type="text" class="form-control" name="lastName" id="lastName">
+			  		</div>
+		  		</div>
+		  		<div class="form-group">
+		  			<label for="email">Email <span>*</span></label>
+		  			<input type="email" class="form-control" name="email" id="email">
+		  		</div>
+		  		<div class="form-group">
+		  			<label for="phone">Phone <span>*</span></label>
+		  			<input type="number" class="form-control" name="phone" id="phoneNumber">
+		  		</div>
+	  		</div>
+	  		
+	  		<div class="position-form">
+	  			<h5>Position</h5>
+		  		<div class="form-group">
+		  			<label for="position">Position you are applying for <span>*</span></label>
+		  			<input type="text" class="form-control" name="position" id="position">
+		  		</div>
+		  		<div class="form-group">
+		  			<label for="resumeFile">Resume upload</label>
+		  			<input type="file" class="form-control" value="Browse..." id="resumeFile">
+		  		</div>
+		  		<div class="form-group">
+		  			<label for="PW">Portlolo website</label>
+		  			<input type="text" class="form-control" id="pw">
+		  		</div>
+		  		<div class="form-group">
+		  			<label for="SQ">Satary requirements</label>
+		  			<input type="text" class="form-control" id="sq">
+		  		</div>
+		  		<div class="form-group">
+		  			<label for="question">When can you start</label>
+		  			<input type="text" class="form-control" id="question">
+		  		</div>
+		  		<p>Are you....</p>
+		  		<input type="radio" name="optradio" value="yes"> Yes <br>
+		  		<input type="radio" name="optradio" value="no"> No <br>
+		  		<input type="radio" name="optradio" value="not sure"> Not sure <br>
+		  		<div class="form-group">
+		  			<label for="">Last company you worked for</label>
+		  			<input type="text" class="form-control" id="">
+		  		</div>
+		  		<div class="form-group">
+		  			<label for="cmt">Comment</label>
+		  			<textarea class="form-control" id="cmt" rows="8"></textarea>
+		  		</div>
+		  		<div class="form-group">
+		  			<button class="btn btn-outline-secondary" value="Submit">Submit</button>
+		  		</div>
+	  		</div>
+	  	</form>
+	</div>
+</body>
+</html>
