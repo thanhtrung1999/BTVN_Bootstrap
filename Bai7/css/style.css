@@ -212,7 +212,7 @@ footer .container-fluid:first-child form .row input, footer .container-fluid:fir
 	background-color: #273a71;
 	border: none;
 }
-footer .container-fluid:first-child form .row:first-child{margin: 4rem 52px 2rem 168px;}
+footer .container-fluid:first-child form .row:first-child{margin: 4rem 4% 2rem 16%;}
 footer .container-fluid:first-child form .row:nth-child(2){margin: 0 0 3rem 0;}
 footer .container-fluid:first-child form .row:nth-child(2) textarea{
 	width: 80%;
@@ -244,6 +244,8 @@ footer .container-fluid:nth-child(2){
 	background-color: #344b8e;
 	padding: 2% 10%;
 }
+footer .container-fluid:nth-child(2) li{margin-right: 10%;}
+footer .container-fluid:nth-child(2) li:last-child{margin-right: 0;}
 footer .container-fluid:nth-child(2) li a{
 	color: white;
 	font-size: 1rem;
